@@ -1,3 +1,6 @@
+
+/* app.js, Egor, Student # 301179880, 10/23/2022 */
+
 //installed third party packages
 let createError = require('http-errors');
 let express = require('express');
@@ -113,26 +116,3 @@ app.use(function(err, req, res, next) {
 });
 
 module.exports = app;
-
-
-/* const options = {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-  serverSelectionTimeoutMS: 5000,
-  autoIndex: false, // Don't build indexes
-  maxPoolSize: 10, // Maintain up to 10 socket connections
-  serverSelectionTimeoutMS: 5000, // Keep trying to send operations for 5 seconds
-  socketTimeoutMS: 45000, // Close sockets after 45 seconds of inactivity
-  family: 4 // Use IPv4, skip trying IPv6
-} */
-
-/*
-app.use(logger('dev'));
-app.use(express.json());
-
-app.use(express.urlencoded({ extended: false }));
-app.use(cookieParser());
-app.use(express.static(path.join(__dirname, '../../public')));
-app.use(express.static(path.join(__dirname, '../../node_modules'))); */
-
-// passport user configuration

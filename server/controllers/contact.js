@@ -1,9 +1,13 @@
+
+/* contact.js, Egor, Student # 301179880, 10/23/2022 */
+
 let express = require ('express');
 let router = express.Router();
 let mongoose = require('mongoose');
 let Contact = require('../models/contact');
 
 let jwt = require('jsonwebtoken');
+
 
 //exporting controller methods
 module.exports.displayContactList = (req,res,next)=>{

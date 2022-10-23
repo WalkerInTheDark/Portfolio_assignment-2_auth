@@ -1,12 +1,16 @@
+<!-- list.ejs, Egor, Student # 301179880, 10/23/2022 -->
+
 <%- include ../partials/header.ejs%>
 <%- include ../partials/main_nav.ejs%>
+
+<link rel="shortcut icon" type="image/x-icon" href="/Assets/images/favicon.ico">
 
 <main class="container">
     <div class="row">
         <div class="col-md-offset-1 col-md-10">
             <h1><%= title %></h1>
             <!--Add a contact button-->
-            <a href="/contact-list/add" class="btn btn-primary" role="button"><i class="fas fa-plus-circle"></i> Add a Contact</a>
+            <a href="/contact-list/add" class="btn btn-primary" id="addContBtn" role="button"><i class="fas fa-plus-circle"></i> Add a Contact</a>
             <br>
             <table class="table table-bordered table-striped table-hover">
                 <!--Table header-->
@@ -25,8 +29,8 @@
                         <td class="text-center"><%=ContactList[count].name %></td>
                         <td class="text-center"><%=ContactList[count].phone_number %></td>
                         <td class="text-center"><%=ContactList[count].email %></td>
-                        <td class ="text-center col-1"><a href="/contact-list/edit/<%=ContactList[count]._id%>" class="btn btn-primary"><i class="fas fa-pencil-alt"></i>Edit</a></td>
-                        <td class ="text-center col-1"><a href="/contact-list/delete/<%=ContactList[count]._id%>" class="btn btn-danger"><i class="fas fa-trash-alt"></i>Delete</a></td> 
+                        <td class ="text-center col-1"><a id="contBtn" href="/contact-list/edit/<%=ContactList[count]._id%>" class="btn btn-primary"><i class="fas fa-pencil-alt"></i>Edit</a></td>
+                        <td class ="text-center col-1"><a id="contBtn" href="/contact-list/delete/<%=ContactList[count]._id%>" class="btn btn-danger"><i class="fas fa-trash-alt"></i>Delete</a></td> 
                     </tr>
                     <% } %>
             </table>

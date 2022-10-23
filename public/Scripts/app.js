@@ -1,4 +1,8 @@
+
+/* app.js, Egor, Student # 301179880, 10/23/2022 */
+
 // IIFE -- Immediately Invoked Function Expression
+
 (function(){
     function Start(){
         console.log("App Started...");

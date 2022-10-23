@@ -1,6 +1,6 @@
 /* custom css*/
 
-/* app.css, Egor, Student # 301179880, 10/15/2022 */
+/* app.css, Egor, Student # 301179880, 10/23/2022 */
 
 /* stylesheet for website text*/
 .txt{
@@ -343,8 +343,15 @@ textarea.input {
   color: black;
 }
 
-/* .a-link {
-    outline: none;
-    text-decoration: none;
-    padding: 2px 1px 0;
-  } */
+#contBtn:hover{
+  color: black;
+}
+
+#addContBtn{
+  margin-bottom: 0.6em;
+}
+
+#addContBtn:hover{
+  margin-bottom: 0.6em;
+  color: black;
+}
